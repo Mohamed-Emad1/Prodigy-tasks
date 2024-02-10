@@ -1,10 +1,9 @@
 let hour = document.querySelector(".hours");
 let minutes = document.querySelector(".minutes");
 let seconds = document.querySelector(".seconds");
-let s = document.getElementById("r");
-// var start = document.querySelector(".start");
-// var reset = document.querySelector(".reset");
-// var pause = document.querySelector(".pause");
+
+let records = document.getElementById("record");
+
 
 let handler;
 function start()
@@ -35,9 +34,18 @@ function reset()
     hour.innerHTML = 0;
     minutes.innerHTML = 0;
     seconds.innerHTML = 0;
+
+    records.innerHTML = "";
 }
-function countdown()
+
+
+function record()
 {
-    s.innerHTML -= 1;
+    var div = document.createElement("div");
+    div.style.color = "black";
+    div.style.fontSize = "25px"
+    div.style.textAlign = "center"
+    div.textContent =`${hour.innerHTML}:${minutes.innerHTML}:${seconds.innerHTML}`
+    records.appendChild(div);
 }
 
