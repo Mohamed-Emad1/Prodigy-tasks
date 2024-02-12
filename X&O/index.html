@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>X&O</title>
+    <link rel="stylesheet" href="css/start.css">
+    <title>X & O</title>
 </head>
 <body>
-    <header>X & O</header>
-    <div class="container">
-        <div class="game">
-            <div onclick="handleClick('one')"  class="one"></div>
-            <div onclick="handleClick('two')" class="two"></div>
-            <div onclick="handleClick('three')" class="three"></div>
-            <div onclick="handleClick('four')" class="four"></div>
-            <div onclick="handleClick('five')" class="five"></div>
-            <div onclick="handleClick('six')" class="six"></div>
-            <div onclick="handleClick('seven')" class="seven"></div>
-            <div onclick="handleClick('eight')" class="eight"></div>
-            <div onclick="handleClick('nine')" class="nine"></div>
-        </div>
+    <h1>Welcome to X & O</h1>
+    <div class="choice">
+        <button class="friend" onclick="friendChoice()">Play against friend</button>
+        <button class="computer" onclick="computerSelected()">Play against Computer</button>
     </div>
-    <script src="main.js">
+
+    <script>
+        var friend = document.querySelector(".friend");
+        function friendChoice(){
+            window.localStorage.setItem("isComputer","false")
+            window.location.href = "start.html";
+        }
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
