@@ -66,11 +66,13 @@ function handleClick(number) {
           if (check) {
             drawX(numberDiv);
             computerTurn = true;
-            checkWin();
+            computerPlay();
+            // checkWin();
           } else {
             drawCircle(numberDiv);
             computerTurn = true;
-            checkWin();
+            computerPlay();
+            // checkWin();
           }
         }
 
@@ -104,12 +106,15 @@ function computerPlay() {
     } while (!computerTurnCheck(randomNumber) && drawCounter !== 0);
 
     if (circleFlag) {
-      setTimeout(function () {
+      setTimeout(function ()
+      {
         drawCircle(randomString);
+        checkWin();
       }, 100);
     } else {
       setTimeout(function () {
         drawX(randomString);
+        checkWin();
       }, 100);
     }
   }
@@ -216,15 +221,16 @@ function checkWin() {
       location.reload();
     }, 60);
   }
-  if (!end && window.localStorage.getItem("isComputer") == "true") {
-    console.log("test test");
-    computerPlay();
-  }
+  // if (!end && window.localStorage.getItem("isComputer") == "true") {
+  //   console.log("test test");
+  //   computerPlay();
+  // }
 }
 
 function WinMessage(winner) {
   setTimeout(() => {
     alert(`Player ${winner} wins`);
     location.reload();
+    return;
   }, 100);
 }
