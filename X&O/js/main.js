@@ -105,12 +105,18 @@ function computerPlay() {
       randomNumber = Math.floor(Math.random() * 10);
     } while (!computerTurnCheck(randomNumber) && drawCounter !== 0);
 
-    if (circleFlag) {
-      setTimeout(function ()
-      {
-        drawCircle(randomString);
-        checkWin();
-      }, 100);
+    if (circleFlag)
+    {
+        setTimeout(function ()
+        {
+          if (drawCounter > 0)
+          {
+            drawCircle(randomString);
+          }
+          checkWin();
+        }, 100);
+        
+      
     } else {
       setTimeout(function () {
         drawX(randomString);
@@ -215,7 +221,7 @@ function checkWin() {
   ) {
     end = true;
     WinMessage("X");
-  } else if (drawCounter === 0) {
+  } else if (drawCounter <= 0) {
     setTimeout(() => {
       alert(`Draw No one wins`);
       location.reload();
