@@ -1,98 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="header">
+        <ul class="list">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li></li>
+        </ul>
+      </div>
 
-
-        <div class="header">
-            <ul class="list">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li></li>
-            </ul>
+      <!-- start about section -->
+      <div class="about" id="about">
+        <div class="first">
+          <div class="image">
+            <img src="images/mohamed.jpg" alt="pic" />
+          </div>
+          <div class="description">
+            <div class="text1">
+              <h2>Front End Developer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                animi dolore numquam fugit iusto, doloremque suscipit, laborum
+                fugiat distinctio, dolor libero similique hic vitae modi
+                voluptatibus voluptas sapiente? Soluta, voluptate?
+              </p>
+            </div>
+            <div class="text2">
+              <h2>Front End Developer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                animi dolore numquam fugit iusto, doloremque suscipit, laborum
+                fugiat distinctio, dolor libero similique hic vitae modi
+                voluptatibus voluptas sapiente? Soluta, voluptate?
+              </p>
+            </div>
+          </div>
         </div>
 
-         <!-- start about section -->
-        <div class="about" id="about">
+        <div class="skills">
+          <div class="text">
+            <h2>front end and back end Developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto ven word ali ball
+            </p>
+          </div>
 
-            <div class="first">
-
-                <div class="image">
-                    <img src="images/mohamed.jpg" alt="pic">
-                </div>
-                <div class="description">
-                    <div class="text1">
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi dolore numquam fugit iusto,
-                        doloremque suscipit, laborum fugiat distinctio,
-                        dolor libero similique hic vitae modi voluptatibus voluptas sapiente? Soluta, voluptate?</p>
-                    </div>
-                    <div class="text2">
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi dolore numquam fugit iusto,
-                        doloremque suscipit, laborum fugiat distinctio,
-                        dolor libero similique hic vitae modi voluptatibus voluptas sapiente? Soluta, voluptate?</p>
-                    </div>
-                </div>
+          <div class="our-skills">
+            <div class="prog-process">
+              <h4>Html &amp; Css</h4>
+              <div class="prog">
+                <span style="width: 85%" data-progress="85%"></span>
+              </div>
             </div>
 
-
-            <div class="skills">
-
-                <div class="text">
-                    <h2>front end and back end Developer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ven word ali ball</p>
-
-                </div>
-
-                <div class="our-skills">
-
-    
-                    <div class="prog-process">
-                        <h4>Html &amp; Css</h4>
-                        <div class="prog">
-                            <span style="width:  85%;" data-progress="85%"></span>
-                        </div>
-                    </div>
-    
-                    <div class="prog-process">
-                        <h4>JavaScript</h4>
-                        <div class="prog">
-                            <span style="width:  70%;" data-progress="70%"></span>
-                        </div>
-                    </div>
-    
-                    <div class="prog-process">
-                        <h4>View</h4>
-                        <div class="prog">
-                            <span style="width:  50%;" data-progress="50%"></span>
-                        </div>
-                    </div>
-
-                    <div class="prog-process">
-                        <h4>PHP</h4>
-                        <div class="prog">
-                            <span style="width:  67%;" data-progress="67%"></span>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="prog-process">
+              <h4>JavaScript</h4>
+              <div class="prog">
+                <span style="width: 70%" data-progress="70%"></span>
+              </div>
             </div>
+
+            <div class="prog-process">
+              <h4>View</h4>
+              <div class="prog">
+                <span style="width: 50%" data-progress="50%"></span>
+              </div>
+            </div>
+
+            <div class="prog-process">
+              <h4>PHP</h4>
+              <div class="prog">
+                <span style="width: 67%" data-progress="67%"></span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-          <!-- end about section -->
+      <!-- end about section -->
 
+      <!-- start project -->
+      <div class="projects" id="projects">
+        <div class="card">
+          <h2>Car Rental    <i class="fa-solid fa-car"></i></h2>
+          <p>
+            • The system allows for registering new cars, including details such
+            as model, year, and plate ID. It enables the update of car status,
+            indicating whether they are active, out of service, or rented.
+            Customers can reserve cars globally from multiple offices by
+            creating an account and providing personal information. <br />
+            •Efficiently automating manual procedures, the system streamlines
+            car reservation processes, covering reservation, pick-up, return,
+            and payment. Customers can easily search for available cars based on
+            their specifications. Advanced search functionality allows users to
+            search by car information, customer details, or reservation day,
+            providing comprehensive information. <br />
+            •The system generates essential reports, including all reservations
+            within a specified period with car and customer details,
+            reservations of a specific car within a period, the status of all
+            cars on a specific day, reservations of a specific customer with
+            relevant car details, and daily payments within a specific period.
+            <br />
+            •To facilitate testing and system demonstration, the database is
+            populated with sufficient data, ensuring comprehensive coverage of
+            all components and functionalities. <br />
+            Used HTML,CSS,JAVASCRIPT,PHP,SQL
+          </p>
+          <img src="images/car_rental.png" alt="">
+        </div>
+        <div class="card">
+          <h2>Copy Qorra Website    <i class="fa-solid fa-book"></i></h2>
+          <p>
+            Project Description: Copy of Qorra Website Front-End using Vue.js,
+            HTML, CSS, and JavaScript Overview: The project involves creating a
+            front-end replica of the Qorra website using Vue.js as the main
+            JavaScript framework, along with HTML and CSS to structure and style
+            the content. The primary goal is to mimic the appearance and
+            functionality of the Qorra website, ensuring a responsive and
+            user-friendly design. Technologies Used: Vue.js: Utilize the Vue.js
+            framework to build dynamic and interactive components, manage the
+            application state, and used routing. HTML: Structure the web pages
+            using HTML, ensuring proper semantics and accessibility for search
+            engines and users with disabilities. CSS: Apply styles using
+            Cascading Style Sheets (CSS) to enhance the visual appeal of the
+            website, providing a consistent and responsive layout across
+            different devices and screen sizes. JavaScript: Employ JavaScript to
+            add interactivity, implement client-side logic, and enhance the user
+            experience by incorporating features such as smooth transitions,
+            animations, and dynamic content updates.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Log In page   <i class="fa-solid fa-lock"></i></h2>
+          <p>
+            Simple log in page using Html,Css,Javascript,PHP,SQL User can log In
+            or Register
+          </p>
+        </div>
+      </div>
+      <!-- end project -->
     </div>
-
-
-</body>
+  </body>
 </html>
