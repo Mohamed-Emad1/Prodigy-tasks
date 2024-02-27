@@ -6,7 +6,7 @@
 
 :root {
   --main-color: #e85d50;
-  --second-color: #fefaf9;
+  --second-color: #f3eaea;
   --title-color: #012d5c;
 }
 html {
@@ -33,12 +33,26 @@ h2::after {
   left: 0px;
   width: 15%;
 }
+
+@media (max-width: 767px) {
+  h2 {
+    text-align: start;
+    margin-left: 10px;
+  }
+  h2::after {
+    left: 10px;
+  }
+  .container {
+    text-align: center;
+  }
+}
 /* global */
 
 .header {
   background-color: var(--second-color);
   width: 100%;
   height: 100px;
+  box-shadow: 0px 10px 8px #888888;
 }
 
 .list {
@@ -47,18 +61,14 @@ h2::after {
   list-style: none;
   text-align: center;
   margin-left: 150px;
+  align-items: center;
 }
 .list li {
   color: var(--title-color);
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  /* transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s; */
 }
 
 .list a {
@@ -75,6 +85,10 @@ h2::after {
   -o-transition: border-bottom 0s 0.2s;
   border-bottom: 2px solid var(--main-color);
 }
+
+/* end header */
+
+/* start about */
 .about .first {
   display: flex;
   justify-content: space-evenly;
@@ -182,6 +196,33 @@ h2::after {
   right: -3px;
 }
 
+@media (max-width: 767px) {
+  .about .description {
+    flex-direction: column;
+  }
+  .about .first {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .first .image img {
+    width: 300px;
+    height: 250px;
+  }
+  .about .first .image::after {
+    width: 300px;
+    height: 270px;
+    top: 60px;
+  }
+  .about .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .our-skills {
+    width: 270px;
+  }
+}
+/* end about */
+
 /* start projects */
 .projects {
   display: flex;
@@ -203,6 +244,19 @@ h2::after {
 .projects .card img {
   width: 300px;
   height: 150px;
+  margin-top: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 2px 3px 6px #e85d50;
+}
+
+@media (max-width: 767px) {
+  .projects {
+    flex-direction: column;
+  }
 }
 
 /* end projects */
